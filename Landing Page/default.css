@@ -1,0 +1,272 @@
+
+:root{
+    --mainColor:#000;
+    --textColor:#e7e5e4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #181A1B;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-family: 'Russo one', sans-serif;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*  Nav */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    
+
+}
+
+.main-nav .logo {
+    width: 40px;
+}
+
+
+.main-nav ul {
+    display: flex;
+
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+   
+
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+    color:var(--textColor);
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid var(--textColor);
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #473B2D;
+    color: white;
+    font-size: 15px;
+    border-radius: 54px;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+/* showcase */
+.showcase {
+    width: 100%;
+    height: 500px;
+    background: url('./images/slide2.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+}
+
+.showcase h2,
+.showcase p {
+    padding-bottom: 10px;
+    color:  var(--mainColor);
+}
+
+.showcase .btn {
+    margin-top: 20px;
+}
+
+/* Home Cards */
+.cards-header{
+    text-align: center;
+    margin-bottom: 10px ;
+    font-size: 20px;
+}
+
+
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 40px;
+
+
+}
+
+.cards-content img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.cards-content h3 {
+    margin-bottom: 5px;
+
+
+}
+
+.cards-content a {
+    display: inline-block;
+    padding: 10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cards-content a:hover i {
+    margin-left: 10px;
+}
+
+/* Carbon  */
+.carbon {
+    margin-bottom: 20px;
+    height: 400px;
+    width: 100%;
+    background: url(./images/slide3.jpg) no-repeat center center/cover;
+    -webkit-box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: -9px 8px 7px 0px rgba(0,0,0,0.75);
+}
+
+.carbon .content {
+
+    width: 55%;
+    padding: 100px 0 0 30px;
+    color: var(--textColor);
+
+}
+.carbon .content p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Follow */
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0 30px;
+}
+
+.follow * {
+    margin-right: 10px;
+}
+
+
+/* Footer */
+.footer {
+    font-size: 12px;
+    background-color:#2b3641;
+    color: var(--textColor);
+    padding: 20px 0;
+
+
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--textColor);
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-inner ul li a{
+    color: var(--textColor);
+}
+
+.footer div i {
+    margin-right: 10px;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    color: var(--textColor);
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    
+}
+
